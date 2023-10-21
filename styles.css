@@ -1,0 +1,85 @@
+:root{
+    --color : #333;
+    --color2 : #FFF;
+    --background : #F7FF5F5;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    width: 100vw;
+    height: 100vh;
+}
+
+audio{
+    display: none;
+}
+
+#pop-up{
+    position: fixed;
+    top : 0;
+    left: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100vw;
+    height: 100vh;
+
+    backdrop-filter: blur(30px);
+}
+
+#pop-up > div{
+    width: clamp(120px, 50%, 580px);
+    padding : 30px;
+
+    border : 1px solid var(--color);
+    border-radius: 30px;
+}
+
+#container{
+    display: flex;
+    justify-content: space-between;
+}
+
+#reject{
+    color : red;
+    border-color: red;
+}
+
+#reject:hover{
+    background-color: red;
+    color : white;
+    border-color: white;
+}
+
+#accept{
+    color : green;
+    border-color: green;
+}
+
+#accept:hover{
+    background-color: green;
+    color : white;
+    border-color: white;
+}
+
+button{
+    height: 60px;
+    width: 180px;
+
+    background-color: var(--background);
+    color : var(--color);
+    border : 2px solid var(--color);
+    border-radius: 30px;
+}
+
+button:hover{
+    background-color: var(--color);
+    color : var(--color2);
+    border-color: var(--color2);
+}
